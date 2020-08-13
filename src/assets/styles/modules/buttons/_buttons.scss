@@ -1,0 +1,26 @@
+.btn {
+    @include catamaran-bold;
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    border: 2px solid $colorMain;
+    color: $textColorLight;
+    background-color: $colorMain;
+    transition: $transitionTime;
+    cursor: pointer;
+
+    &:hover {
+        //color: $textColorLight;
+        color: $colorMain;
+        background-color: transparent;
+    }
+
+    &--small {
+    }
+    &--large {
+        font-size: 18px;
+        padding: 15px;
+        max-width: 240px;
+    }
+}

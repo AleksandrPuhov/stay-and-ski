@@ -1,0 +1,18 @@
+.main-nav {
+    display: flex;
+    &__item {
+        margin: 0 0 0 35px;
+    }
+    &__ref {
+        @include muli-bold;
+        color: $textColorLight;
+        display: block;
+        padding: 5px 10px;
+        border-bottom: 3px solid transparent;
+        transition: $transitionTime;
+        white-space: nowrap;
+        &:hover {
+            border-bottom: 3px solid $colorMain;
+        }
+    }
+}

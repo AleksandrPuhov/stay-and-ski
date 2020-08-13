@@ -1,0 +1,62 @@
+.header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 50%;
+    position: relative;
+    padding-top: 20px;
+
+    &-top {
+        position: sticky;
+        top: 0;
+        height: 90px;
+        z-index: 2;
+        background-color: transparent;
+
+        &--fixed {
+            background-color: #4779aa;
+            box-shadow: 1px 2px 2px #4779aa;
+        }
+
+        &__inner {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &-content {
+        height: calc(100% - 90px);
+        &__inner {
+            padding: 20px 0;
+        }
+
+        &__subtitle,
+        &__title {
+            @include catamaran-black;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1;
+        }
+
+        &__subtitle {
+            font-size: 26px;
+            color: $headerColorSubtitle;
+        }
+        &__title {
+            font-size: 160px;
+            text-align: center;
+            // color: #5799e6;
+            // opacity: 0.4;
+            color: $headerColorTitle;
+            margin: 20px 0 100px;
+        }
+        &__text {
+            @include muli;
+            font-size: 24px;
+            color: $textColorLight;
+            max-width: 660px;
+            margin: 0 0 50px;
+        }
+    }
+}
