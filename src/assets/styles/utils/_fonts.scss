@@ -9,6 +9,8 @@
     }
 }
 
+@include font-face('Muli', '../fonts/muli/mulilight/mulilight', 300, 'normal');
+
 @include font-face(
     'Muli',
     '../fonts/muli/muliregular/muliregular',
@@ -30,6 +32,11 @@
     900,
     'normal'
 );
+
+@mixin muli-light {
+    font-family: 'Muli', 'sans-serif';
+    font-weight: 300;
+}
 
 @mixin muli {
     font-family: 'Muli', 'sans-serif';
