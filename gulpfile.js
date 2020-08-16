@@ -7,7 +7,16 @@ const fonts = require('./gulp/tasks/fonts');
 const imageMinify = require('./gulp/tasks/imageMinify');
 const pug = require('./gulp/tasks/pug');
 const spriteSVG = require('./gulp/tasks/spriteSVG');
+const libsJS = require('./gulp/tasks/libsJS');
 
-const dev = gulp.parallel(pug, scripts, styles, imageMinify, spriteSVG, fonts);
+const dev = gulp.parallel(
+    pug,
+    scripts,
+    styles,
+    imageMinify,
+    spriteSVG,
+    fonts,
+    libsJS
+);
 
 exports.default = gulp.series(clean, dev, serverWatch);

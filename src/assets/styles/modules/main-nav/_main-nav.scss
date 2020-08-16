@@ -1,7 +1,9 @@
 .main-nav {
     display: flex;
     &__item {
-        margin: 0 0 0 35px;
+        & + & {
+            margin: 0 0 0 35px;
+        }
     }
     &__ref {
         @include muli-bold;
@@ -13,6 +15,13 @@
         white-space: nowrap;
         &:hover {
             border-bottom: 3px solid $colorMain;
+        }
+    }
+    @media screen and (max-width: $tabletWideSize) {
+        &__item {
+            & + & {
+                margin: 0 0 0 15px;
+            }
         }
     }
 }

@@ -2,7 +2,7 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 70% 50%;
+    background-position: 55% 50%;
     position: relative;
 
     &-top {
@@ -15,8 +15,8 @@
         background-color: transparent;
 
         &--fixed {
-            background-color: #4779aa;
-            box-shadow: 1px 2px 2px #4779aa;
+            background-color: $headerColorNav;
+            box-shadow: 1px 2px 2px $headerColorNav;
             position: fixed;
             top: 0;
         }
@@ -50,8 +50,6 @@
         &__title {
             font-size: 160px;
             text-align: center;
-            // color: #5799e6;
-            // opacity: 0.4;
             color: $headerColorTitle;
             margin: 20px 0 100px;
         }

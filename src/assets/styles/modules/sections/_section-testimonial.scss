@@ -1,0 +1,99 @@
+.testimonial {
+    &__inner {
+        padding: 150px 0;
+    }
+    &__title {
+        text-align: center;
+        margin: 0 0 55px 0;
+    }
+
+    &__swiper {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        .swiper {
+            &-wrapper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                display: flex;
+            }
+            &-slide {
+                flex-shrink: 0;
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+        }
+
+        &-pagination {
+            display: flex;
+            justify-content: center;
+            margin: 55px 0 0;
+            .swiper-pagination-bullet {
+                height: 13px;
+                width: 13px;
+                border-radius: 100%;
+                background-color: rgba(0, 0, 0, 0.15);
+
+                display: block;
+                cursor: pointer;
+                transition: $transitionTime;
+                margin: 0 5px;
+
+                &-active,
+                &:hover {
+                    background-color: $colorMain;
+                }
+            }
+        }
+    }
+    &__card {
+        display: block;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+
+        &-inner {
+            display: flex;
+            justify-content: center;
+        }
+
+        &-icon {
+            &__left,
+            &__right {
+                max-width: 50px;
+                margin: 0 10px;
+            }
+            &__img {
+                width: 100%;
+                height: 30%;
+                display: block;
+                fill: rgba(0, 0, 0, 0.2);
+            }
+        }
+        &-person {
+            &__img {
+                border-radius: 100%;
+                margin: 0 auto;
+            }
+            &__name {
+                font-size: 18px;
+                margin: 10px 0 5px;
+            }
+        }
+        &-text {
+            text-decoration: none;
+            display: block;
+            margin: 20px 0 0;
+        }
+
+        &:hover &-text {
+            text-decoration: underline;
+        }
+    }
+}

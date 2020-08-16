@@ -14,14 +14,15 @@ $headerColorSubtitle: rgba(
     $color: #69a0cd,
     $alpha: 0.8,
 );
+$headerColorNav: #4779aa;
 
-// $breakpoints: (
-//   "phone-size"       : 400px,
-//   "phone-wide-size"  : 480px,
-//   "phablet-size"     : 560px,
-//   "tablet-small-size": 640px,
-//   "tablet-size"      : 768px,
-//   "tablet-wide-size" : 1024px,
-//   "desktop-size"     : 1248px,
-//   "desktop-wide-size": 1440px
-// );
+$footerColorText: #ffffff;
+
+// $phoneSize: 400px;
+// $phoneWideSize: 480px;
+// $phabletSize: 560px;
+// $tabletSmallSize: 640px;
+$tabletSize: 930px;
+$tabletWideSize: 1024px;
+// $desktopSize: 1248px;
+// $desktopWideSize: 1440px;

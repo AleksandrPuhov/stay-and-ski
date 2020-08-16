@@ -9,6 +9,15 @@ const navBgColor = () => {
     }
 };
 
+const mySwiper = new Swiper('.testimonial__swiper', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+        el: '.testimonial__swiper-pagination',
+        clickable: true,
+    },
+});
+
 window.addEventListener('scroll', () => {
     navBgColor();
 });
