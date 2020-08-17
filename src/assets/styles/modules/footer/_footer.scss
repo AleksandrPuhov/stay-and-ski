@@ -1,5 +1,4 @@
 .footer {
-    //    min-height: 640px;
     background-color: $titleColorDark;
 
     &__inner {
@@ -23,7 +22,7 @@
             }
         }
         &-ref {
-            display: flex;
+            display: inline-flex;
             align-items: center;
         }
 
@@ -66,6 +65,26 @@
         iframe {
             height: 100%;
             width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $tabletSize) {
+        &__inner {
+            padding: 15px 0;
+            flex-direction: column;
+        }
+        &__info {
+            padding: 30px 0;
+        }
+        &__title {
+            margin: 0;
+        }
+
+        &__map {
+            height: 300px;
+        }
+        &__contacts {
+            margin: 25px 0 25px 15px;
         }
     }
 }

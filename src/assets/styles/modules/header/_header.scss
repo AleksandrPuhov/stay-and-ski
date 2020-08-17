@@ -2,7 +2,7 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 55% 50%;
+    background-position: 60% 50%;
     position: relative;
 
     &-top {
@@ -11,7 +11,7 @@
         height: 100%;
         width: 100%;
         height: 90px;
-        z-index: 2;
+        z-index: 4;
         background-color: transparent;
 
         &--fixed {
@@ -59,6 +59,42 @@
             color: $textColorLight;
             max-width: 660px;
             margin: 0 0 50px;
+        }
+    }
+    @media screen and (max-width: $tabletSize) {
+        &-top {
+            position: fixed;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            height: 70px;
+            z-index: 4;
+            background-color: $headerColorNav;
+            box-shadow: 1px 2px 2px $headerColorNav;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $headerColorNav;
+                z-index: 5;
+            }
+            &__logo {
+                position: relative;
+                z-index: 6;
+                width: 140px;
+            }
+        }
+
+        &-content {
+            &__subtitle {
+                font-size: 22px;
+            }
+            &__title {
+                font-size: 120px;
+            }
         }
     }
 }

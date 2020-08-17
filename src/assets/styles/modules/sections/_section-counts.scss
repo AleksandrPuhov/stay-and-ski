@@ -44,7 +44,7 @@
         }
     }
     @media screen and (max-width: $tabletWideSize) {
-        background-position: 0% 50%;
+        background-position: 0% 40%;
         text-align: center;
 
         &__title {
@@ -59,6 +59,13 @@
         &__list {
             display: flex;
             justify-content: center;
+        }
+    }
+    @media screen and (max-width: $tabletSize) {
+        min-height: auto;
+        background-size: auto;
+        &__inner {
+            padding: 100px 0;
         }
     }
 }

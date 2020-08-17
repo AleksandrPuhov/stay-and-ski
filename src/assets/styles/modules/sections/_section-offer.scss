@@ -35,4 +35,29 @@
             margin: 25px auto 0;
         }
     }
+    @media screen and (max-width: $tabletSize) {
+        &__inner {
+            padding: 55px 0 80px;
+        }
+        &__list {
+            flex-direction: column;
+            margin: 0;
+            &-item {
+                padding: 0;
+                margin: 20px 0;
+            }
+        }
+        &__text {
+            margin: 20px;
+        }
+
+        &__card {
+            &-subtitle {
+                margin: 15px 0 10px;
+            }
+            &-btn {
+                margin: 15px auto 0;
+            }
+        }
+    }
 }

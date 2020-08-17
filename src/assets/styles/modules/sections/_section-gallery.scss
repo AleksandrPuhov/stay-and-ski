@@ -1,7 +1,8 @@
 .gallery {
     &-grid {
         display: grid;
-        grid-template:
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
             'small-1 small-2 large-2'
             'large-1 small-3 large-2'
             'large-1 small-4 small-5';
@@ -26,6 +27,22 @@
             }
             &-7 {
                 grid-area: small-5;
+            }
+        }
+    }
+    @media screen and (max-width: $tabletSize) {
+        &-grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                'small-1 large-2'
+                'large-1 large-2'
+                'large-1 small-2'
+                'small-3 small-4';
+
+            &__item {
+                &-7 {
+                    display: none;
+                }
             }
         }
     }

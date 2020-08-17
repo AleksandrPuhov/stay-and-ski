@@ -25,4 +25,18 @@
             text-transform: uppercase;
         }
     }
+    @media screen and (max-width: $tabletSize) {
+        &__inner {
+            padding: 100px 0;
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+            &-item {
+                padding: 20px 10px;
+                flex-basis: 50%;
+            }
+        }
+    }
 }

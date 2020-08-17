@@ -16,6 +16,13 @@ body {
     line-height: 1.5;
     background-color: $colorBodyBg;
 }
+
+@media screen and (max-width: $tabletSize) {
+    .lock {
+        overflow: hidden;
+    }
+}
+
 body,
 h1,
 h2,

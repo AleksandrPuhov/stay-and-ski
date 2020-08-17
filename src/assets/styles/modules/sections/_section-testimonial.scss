@@ -96,4 +96,9 @@
             text-decoration: underline;
         }
     }
+    @media screen and (max-width: $tabletSize) {
+        &__inner {
+            padding: 100px 0;
+        }
+    }
 }
