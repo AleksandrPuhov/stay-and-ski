@@ -87,4 +87,9 @@
             margin: 25px 0 25px 15px;
         }
     }
+    @media screen and (max-width: $phoneSize) {
+        &__map {
+            display: none;
+        }
+    }
 }

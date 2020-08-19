@@ -1,5 +1,4 @@
 .header {
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60% 50%;
@@ -30,11 +29,19 @@
     }
     &-content {
         position: relative;
-        height: 100%;
         &__inner {
             padding: 125px 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
         }
 
+        &__top {
+            position: absolute;
+            width: calc(100% - 30px);
+            top: 130px;
+        }
         &__subtitle,
         &__title {
             @include catamaran-black;
@@ -49,9 +56,9 @@
         }
         &__title {
             font-size: 160px;
-            text-align: center;
+            // text-align: center;
             color: $headerColorTitle;
-            margin: 20px 0 100px;
+            margin: 0;
         }
         &__text {
             @include muli;
@@ -89,11 +96,36 @@
         }
 
         &-content {
+            &__top {
+                top: 100px;
+            }
+
             &__subtitle {
                 font-size: 22px;
             }
             &__title {
                 font-size: 120px;
+            }
+        }
+    }
+    @media screen and (max-width: $phabletSize) {
+        &-content {
+            &__subtitle {
+                font-size: 20px;
+            }
+            &__title {
+                font-size: 94px;
+                margin: 20px 0 100px;
+            }
+        }
+    }
+    @media screen and (max-width: $phoneSize) {
+        &-content {
+            &__subtitle {
+                font-size: 20px;
+            }
+            &__title {
+                font-size: 70px;
             }
         }
     }
